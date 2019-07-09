@@ -14,8 +14,8 @@ class RegisterController extends Controller
 
     public function postRegister(Request $request)
     {
-        $user = Sentinel::registerAndActivate($request->all());
+        Sentinel::registerAndActivate($request->all());
         
-        return redirect('/home');
+        return view('/home');
     }
 }

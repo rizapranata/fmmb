@@ -12,11 +12,23 @@
   </head>
   <body>
     <div class="container">
-        <p class="lead">
-            <h3>Selamat Datang</h3>
-        </p>
         <br>
-        <a href="http://localhost/sentinel/public/register">Register</a>
+        @if(Sentinel::check())
+          <form action="http://localhost/sentinel/public/logout" id="logout-form" methode="POST">
+            {{ csrf_field( )}}
+            <a href="" onclick="document.getElementById('logout-form').submit()">Logout</a>
+          </form>
+        @else
+          <a href="http://localhost/sentinel/public/login">login</a>
+          <a href="http://localhost/sentinel/public/register">Register</a>
+        @endif
+        @if(Sentinel::check())
+          <p class="lead">
+              <h3>Selamat Datang {{Sentinel::getUser()->first_name}}</h3>
+          </p>
+        @else
+            <p>Login Dulu Bossku...!</p>
+        @endif
     </div>
 
     <!-- Optional JavaScript -->
