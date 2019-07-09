@@ -1,5 +1,6 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" type="text/css" href="{{ asset('/css/app.css') }}">
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
@@ -44,10 +45,11 @@
                                     <a href="http://localhost/sentinel/public/login" class="pull-right m-2">Login</a>
                                 </div>
                             <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+<script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>
