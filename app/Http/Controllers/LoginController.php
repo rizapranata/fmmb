@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 use Sentinel;
 
 class LoginController extends Controller
 {
+   
     public function login()
     {
         return view('auth.login');
@@ -16,7 +18,8 @@ class LoginController extends Controller
     {
        $show = Sentinel::authenticate($request->all());
         //return Sentinel::check();
-        return view('/home');
+        $show = User::all();
+        return view('/home',['show' => $show]);
     }
 
     public function logout()
