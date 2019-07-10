@@ -1,15 +1,8 @@
 @extends('layout.master')
+    @section('title',"Home")
     @section('content')
     <div class="container">
-      @if(Sentinel::check())
-        <form action="http://localhost/sentinel/public/logout" id="logout-form" methode="POST">
-          {{ csrf_field( )}}
-          <a href="" onclick="document.getElementById('logout-form').submit()">Logout</a>
-        </form>
-      @else
-        <a href="http://localhost/sentinel/public/login">login</a>
-        <a href="http://localhost/sentinel/public/register">Register</a>
-      @endif
+     
       @if(Sentinel::check())
         <p class="lead">
             <h3>Selamat Datang {{Sentinel::getUser()->first_name}}</h3>
@@ -37,7 +30,7 @@
         </table>
         
       @else
-          <p>Login Dulu Bossku...!</p>
+          <p>Registrasi Dulu Bossku...!</p>
       @endif
     </div>
   @endsection
