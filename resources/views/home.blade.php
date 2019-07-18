@@ -30,7 +30,20 @@
         </table>
         
       @else
-          <p>Registrasi Dulu Bossku...!</p>
+        <div class="row warning">
+          <div class="col-md-6 offset-md-3">
+            <div class="card text-center">
+              <div class="card-header">
+               Warning!
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Registrasi/Login Dulu Bossku...!</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="http://localhost/sentinel/public/register" class="btn btn-primary">Go Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
       @endif
     </div>
   @endsection

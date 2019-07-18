@@ -1,0 +1,72 @@
+html {
+	position: relative;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.jumbotron{
+    background-image: url('../img/1.jpg');
+	background-attachment: fixed;
+	color: rgb(251, 248, 248);
+	background-size: cover;
+	overflow: hidden;
+}
+
+.jumbotron img{
+	width: 200px;
+	margin-top: 20px;
+}
+
+.jumbotron h1, .jumbotron p {
+	text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+hr{
+	width: 250px;
+	border-top: 3px solid #999;
+}
+
+section {
+	min-height: 600px;
+}
+
+.about{
+    min-height:auto;
+}
+
+.about2{
+    background-color: #eaeaea;
+    min-height: 600px;
+}
+
+.about2 img{
+    width: 350px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    transition-duration: .3s;
+    padding-top: 30px;
+}
+
+.jarak{
+    margin-top:30px;
+}
+
+.tentang{
+    margin-bottom: 30px;
+}
+
+.warning{
+    margin-top: 180px;
+}
+/* .pKanan {
+	transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul{
+	opacity: 1;
+	transform: translate(0,0);
+} */ 

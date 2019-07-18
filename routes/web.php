@@ -21,3 +21,7 @@ Route::get('/login', 'LoginController@login');
 Route::post('/login', 'LoginController@postLogin');
 
 Route::post('/logout','LoginController@logout');
+
+Route::get('/home', 'HomeController@home');
+
+Route::get('/profile', 'ProfileFmmbController@profile');
