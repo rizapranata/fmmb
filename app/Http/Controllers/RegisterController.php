@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 use Sentinel;
 
 class RegisterController extends Controller
@@ -15,7 +16,9 @@ class RegisterController extends Controller
     public function postRegister(Request $request)
     {
         Sentinel::registerAndActivate($request->all());
-        
-        return view('/home');
+
+        $user = User::all();
+
+        return view('/home', ['show' => $user]);
     }
 }

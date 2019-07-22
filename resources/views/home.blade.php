@@ -1,6 +1,7 @@
 @extends('layout.master')
     @section('title',"Home")
     @section('content')
+    <section class="home">
     <div class="container">
      
       @if(Sentinel::check())
@@ -28,22 +29,20 @@
           </tbody>
         @endforeach
         </table>
-        
+    </div>   
       @else
-        <div class="row warning">
-          <div class="col-md-6 offset-md-3">
-            <div class="card text-center">
-              <div class="card-header">
-               Warning!
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Registrasi/Login Dulu Bossku...!</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="http://localhost/sentinel/public/register" class="btn btn-primary">Go Register</a>
-              </div>
-            </div>
+      
+      <section class="warning">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h3>STOP..!</h3>
+            <h5>Login Dulu Bosquuuee...</h5>
           </div>
         </div>
+      </div>
+      </section>
       @endif
-    </div>
+    
+    </section>
   @endsection

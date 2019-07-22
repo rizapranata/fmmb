@@ -5,39 +5,35 @@
 @extends('layout.master')
 @section('title',"Login")
 @section('content')
+<section class="login">
 <div class="container">
     <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <div class="panel panel-primary mt-5">
-            <!-- card coba -->
-            <div class="card">
-            <h5 class="card-header">Login</h5>
-            <div class="card-body">
-                 <form action="http://localhost/sentinel/public/login" method="POST">
-                 {{ csrf_field() }}
-                    <div class="form-group row">
-                        <div class="col-sm-12">
-                        <input type="email" class="form-control"name="email" placeholder="Email" required>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group row">
-                        <div class="col-sm-12">
-                        <input type="password" class="form-control" name="password" placeholder="Password" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <div class="col-sm-12">
-                            <button type="submit" value="register" class="btn btn-success  pull-right">Login</button>
-                            <a href="http://localhost/sentinel/public/register" class="pull-right m-2">Register</a>
-                        </div>
-                    </div>
-                </form>
+        <div class="col-md-4 col-md-offset-4">
+        <h3 class="text-center">Login</h3>
+        <form class="form-horizontal" action="http://localhost/sentinel/public/login" method="POST">
+        @csrf
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password" required>
+            </div>
+            <div class="checkbox mb-3">
+                <label>
+                <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+                <!-- <a href="http://localhost/sentinel/public/register" class="pull-right m-2 ">Register</a> -->
                 </div>
             </div>
+        </form>
         </div>
     </div>
 </div>
+</section>
 @endsection
 <!-- <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script> -->

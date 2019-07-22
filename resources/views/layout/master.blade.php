@@ -22,7 +22,7 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -30,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="#home" class="navbar-brand page-scroll">Home</a>
+          
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -42,10 +42,24 @@
           </form>
 
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="#about" class="page-scroll">About</a></li>
-            <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-            <li><a href="#contact" class="page-scroll">Contact</a></li>
-            <li><a href="produk.html">Produk</a></li>
+            <li><a class="navbar-brand logo-fmmb page-scroll" href="http://localhost/sentinel/public/home">
+              <img src="bootstrap3/img/fmmb.png" width="80">
+            </a>
+            </li>
+            <li><a href="http://localhost/sentinel/public/profile" class="page-scroll">About</a></li>
+            @if(Sentinel::check())
+            <li>
+              <form action="http://localhost/sentinel/public/logout" method="POST" id="logout-form" class="navbar-form">
+                <div class="form-group">
+                @csrf
+                  <a href="" onclick="document.getElementById('logout-form').submit()" class="page-scroll">Logout</a>
+                </div>
+              </form>
+            </li>
+            @else
+              <li><a href="http://localhost/sentinel/public/login" class="page-scroll">Login</a></li>
+              <li><a href="http://localhost/sentinel/public/register">Register</a></li>
+            @endif
           </ul>
         </div>
       </div>

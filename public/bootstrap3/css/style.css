@@ -17,6 +17,10 @@ body {
 	border-block:  #4ac9b9;
 }
 
+.logo-fmmb a{
+	margin: 20px;
+}
+
 .jumbotron {
 	background-image: url('../img/1.jpg');
 	background-attachment: fixed;
@@ -46,6 +50,24 @@ hr{
 }
 
 section {
+	min-height: 600px;
+}
+
+.login{
+	margin-top:160px;
+}
+
+.register{
+	margin-top:80px;
+	margin-bottom: 40px;
+}
+
+.home{
+	margin-top: 30px;
+}
+
+.warning{
+	background-color: salmon;
 	min-height: auto;
 }
 
@@ -103,10 +125,10 @@ footer {
 	background-color: #333;
 	padding-top: 30px;
 }
-
+/* 
 footer {
 	background-color: #4ac9b9;
-}
+} */
  
 footer p {
 	color: #aaa;

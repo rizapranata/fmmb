@@ -19,7 +19,7 @@ class LoginController extends Controller
         Sentinel::authenticate($request->all());
         //return Sentinel::check();
         $show = User::all();
-        return view('/home',['show' => $show]);
+        return view('home',['show' => $show]);
     }
 
     public function logout()

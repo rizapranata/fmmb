@@ -41,7 +41,7 @@
         <div class="row">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="img/portfolio/port1.JPG" alt="...">
+                <!-- <img src="img/portfolio/port1.JPG" alt="..."> -->
                 <div class="caption">
                     <h3>Thumbnail label</h3>
                     <p>...</p>
@@ -52,7 +52,7 @@
 
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="img/portfolio/port2.JPG" alt="...">
+                <!-- <img src="img/portfolio/port2.JPG" alt="..."> -->
                 <div class="caption">
                     <h3>Thumbnail label</h3>
                     <p>...</p>
@@ -63,7 +63,40 @@
 
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
-                <img src="img/portfolio/port3.JPG" alt="...">
+                <!-- <img src="img/portfolio/port3.JPG" alt="..."> -->
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <!-- <img src="img/portfolio/port3.JPG" alt="..."> -->
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <!-- <img src="img/portfolio/port3.JPG" alt="..."> -->
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <!-- <img src="img/portfolio/port3.JPG" alt="..."> -->
                 <div class="caption">
                     <h3>Thumbnail label</h3>
                     <p>...</p>
