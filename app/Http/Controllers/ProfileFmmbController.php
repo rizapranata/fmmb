@@ -8,6 +8,11 @@ class ProfileFmmbController extends Controller
 {
     public function profile()
     {
-        return view('/profileFmmb');
+        return view('profile.profileFmmb');
+    }
+
+    public function sejarah()
+    {
+        return view('profile.sejarah');
     }
 }

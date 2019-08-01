@@ -43,9 +43,9 @@
             <div class="thumbnail">
                 <!-- <img src="img/portfolio/port1.JPG" alt="..."> -->
                 <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    <h3>Sejarah FMMB</h3>
+                    <p>Halaman Sejarah FMMB...</p>
+                    <p><a href="http://localhost/sentinel/public/sejarah" class="btn btn-primary" role="button">Lihat Sejarah</a></p>
                 </div>
             </div>
         </div>

@@ -19,6 +19,6 @@ class RegisterController extends Controller
 
         $user = User::all();
 
-        return view('/home', ['show' => $user]);
+        return view('auth.login');
     }
 }

@@ -25,3 +25,4 @@ Route::post('/logout','LoginController@logout');
 Route::get('/home', 'HomeController@home');
 
 Route::get('/profile', 'ProfileFmmbController@profile');
+Route::get('/sejarah', 'ProfileFmmbController@sejarah');
